@@ -25,14 +25,20 @@ const useStyles = makeStyles((theme) => ({
     },
     logo: {
         align: "start",
+        objectFit: 'contain',
+        justifyContent: 'center',
+        display: 'flex',
+        alignItems: 'center',
     },
     rules: {
         textAlign: "left",
         paddingLeft: "10px",
 
     },
-    icons: {
-
+    header: {
+        height: '120px',
+        minWidth:'316px',
+        
     }
 }));
 
@@ -79,7 +85,7 @@ export default function FullWidthGrid() {
             <Grid container spacing={3}>
                 <Grid item xs={12}>
                     <Paper className={classes.logo}>
-                        <img src={logo} alt='compresstheimage.com'/>
+                        <img className={classes.header} src={logo} alt='compresstheimage.com' />
                     </Paper>
                 </Grid>
                 <Grid item xs={12} sm={4}>
@@ -91,7 +97,7 @@ export default function FullWidthGrid() {
                         )}
 
                         <div className="compress">
-                            <label className="custom-file-upload " >
+                            <label class="custom-file-upload " >
                                 CUSTOM UPLOAD
                                 <input onChange={(e) => handle(e)}
                                     type="file" accept="image/*"
@@ -121,10 +127,10 @@ export default function FullWidthGrid() {
                                 </a>
                             </div>) :
                             (<div className="compress">
-                            <a  href="/#" className='custom-file-upload' style={{ background: '#e0e0e0',color: '#a8a8a8', textDecoration: 'none' }}  >
-                                DOWNLOAD IMAGE
-                            </a>
-                        </div>)}
+                                <a href="/#" className='custom-file-upload' style={{ background: '#e0e0e0', color: '#a8a8a8', textDecoration: 'none' }}  >
+                                    DOWNLOAD IMAGE
+                                </a>
+                            </div>)}
                     </Paper>
                 </Grid>
                 <Grid item xs={12}>
