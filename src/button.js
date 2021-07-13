@@ -10,14 +10,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ContainedButtons() {
+export default function ContainedButtons(props) {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       
       <Button variant="contained" color="primary">
-            Upload
+            {props.name}
       </Button>
       
     </div>
