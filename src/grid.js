@@ -12,6 +12,9 @@ import TextField from '@material-ui/core/TextField';
 import { useState } from 'react';
 import imageCompression from "browser-image-compression";
 import Button from '@material-ui/core/Button';
+import MainContent from './maincontent';
+import Kadhai from './kathai';
+import EngalaPathi from './engalapathi'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -21,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     paper: {
         padding: theme.spacing(2),
         textAlign: 'center',
-        color: theme.palette.text.secondary,
+        color: '#141850',
     },
     logo: {
         align: "start",
@@ -37,9 +40,13 @@ const useStyles = makeStyles((theme) => ({
     },
     header: {
         height: '120px',
-        minWidth:'316px',
-        
+        minWidth: '316px',
+    },
+
+    grid: {
+        backgroundColor: '#ef9273',
     }
+
 }));
 
 export default function FullWidthGrid() {
@@ -82,10 +89,15 @@ export default function FullWidthGrid() {
 
     return (
         <div className={classes.root}>
-            <Grid container spacing={3}>
+            <Grid container spacing={1}>
                 <Grid item xs={12}>
                     <Paper className={classes.logo}>
                         <img className={classes.header} src={logo} alt='compresstheimage.com' />
+                    </Paper>
+                </Grid>
+                <Grid item xs={12}>
+                    <Paper className={classes.logo}>
+                        <MainContent />
                     </Paper>
                 </Grid>
                 <Grid item xs={12} sm={4}>
@@ -136,6 +148,16 @@ export default function FullWidthGrid() {
                 <Grid item xs={12}>
                     <Paper className={classes.rules}>
                         <Rules />
+                    </Paper>
+                </Grid>
+                <Grid item xs={12}>
+                    <Paper className={classes.rules}>
+                        <Kadhai/>
+                    </Paper>
+                </Grid>
+                <Grid item xs={12}>
+                    <Paper className={classes.rules}>
+                        <EngalaPathi/>
                     </Paper>
                 </Grid>
                 <Grid item xs={12}>
