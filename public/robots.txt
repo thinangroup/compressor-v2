@@ -1,4 +1,4 @@
-User-Agent: *
+User-agent: *
 Allow: /ads/preferences/
 Allow: /gpt/
 Allow: /pagead/show_ads.js
