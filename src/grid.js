@@ -109,7 +109,7 @@ export default function FullWidthGrid() {
                         )}
 
                         <div className="compress">
-                            <label class="custom-file-upload " >
+                            <label className="custom-file-upload " >
                                 CUSTOM UPLOAD
                                 <input onChange={(e) => handle(e)}
                                     type="file" accept="image/*"
