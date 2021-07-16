@@ -62,6 +62,7 @@ export default function FullWidthGrid() {
         setOrigImage(imagefile);
         setorigImageFile(URL.createObjectURL(imagefile));
         setfilename(imagefile.name);
+        document.getElementById('compress button').scrollIntoView({behavior: "smooth"});
     };
 
     const handleCompressImage = (e) => {
@@ -79,6 +80,7 @@ export default function FullWidthGrid() {
             const downloadLink = URL.createObjectURL(output);
             setcompressImage(downloadLink);
         })
+        document.getElementById('Download image').scrollIntoView({behavior: "smooth"});
     }
     function valueChanged(evt) {
         const kbSize = evt.target.value / 1024;
@@ -118,14 +120,14 @@ export default function FullWidthGrid() {
                         </div>
                     </Paper>
                 </Grid>
-                <Grid item xs={12} sm={4}>
+                <Grid item xs={12} sm={4} id='compress button'>
                     <Paper className={classes.paper}>
                         <TextField style={{ marginBottom: '10px' }} defaultValue="20" id="outlined-basic" onChange={valueChanged} type='number' size="small" label="Compression Size in KB" variant="outlined" />
                         {origImageFile ? (<Button variant="contained" color="primary" onClick={(e) => handleCompressImage(e)} > Compress Image </Button>) :
                             (<Button variant="contained" color="primary" onClick={(e) => handleCompressImage(e)} disabled> Compress Image </Button>)}
                     </Paper>
                 </Grid>
-                <Grid item xs={12} sm={4}>
+                <Grid item xs={12} sm={4} id='Download image'>
                     <Paper className={classes.paper}>
                         {compressImage ? (
                             <MediaCard image={compressImage} title='Download Image' alt='download' />
