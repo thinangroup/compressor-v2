@@ -14,7 +14,6 @@ import imageCompression from "browser-image-compression";
 import Button from '@material-ui/core/Button';
 import MainContent from './maincontent';
 import Kadhai from './kathai';
-import EngalaPathi from './engalapathi'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -155,11 +154,6 @@ export default function FullWidthGrid() {
                 <Grid item xs={12}>
                     <Paper className={classes.rules}>
                         <Kadhai/>
-                    </Paper>
-                </Grid>
-                <Grid item xs={12}>
-                    <Paper className={classes.rules}>
-                        <EngalaPathi/>
                     </Paper>
                 </Grid>
                 <Grid item xs={12}>
