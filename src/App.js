@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 import Error from './Error';
 import EngalaPathi from './engalapathi';
 import PrivacyPolicy from './privacyPolicy';
+import Terms from './termsandConditions';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" component={SimpleContainer} exact />
         <Route path="/about" component={EngalaPathi} />
         <Route path="/privacy-policy" component={PrivacyPolicy} />
+        <Route path="/terms-and-conditions" component={Terms} />
         <Route component={Error} />
       </Switch>
     </main>
