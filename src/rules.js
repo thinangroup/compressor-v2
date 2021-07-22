@@ -3,15 +3,18 @@ import React from 'react'
 function Rules() {
     return (
         <div className='rules-main'>
-            <h2 style={{marginBottom: '0px'}}>How to compress images?</h2>
-            <ul className='rules-point' style={{marginLeft: '0px'}}>
-            <li>Click Upload button and select the file to be compressed.(JPG, JPEG, PNG, GIF, WEBP, ICO)</li>
-            <li>Enter the size to be compressed in Kb in the input box. By default the value is <span>20Kb</span>.</li>
-            <li>Once the required size is entered click Compress button.</li>
-            <li>The compressed image is shown in the <span>compressed image container </span>. Click the download button below to download it.</li>
-            <li><span>We won't store any images that you upload/compress in our website</span></li>
+            <h2 style={{ marginBottom: '0px' }}>Steps to follow:</h2>
+            <ul className='rules-point' style={{ marginLeft: '0px' }}>
+                <li>	Click the custom upload button.</li>
+                <li>	The file explorer appears. Browse the folder where the image to be upload is present, click the image  and click ok</li>
+                <li>	After the image is uploaded, the image appears on the image space provided above.</li>
+                <li>	Now enter the size(in KB), the image to be compressed in the space provided.</li>
+                <li>	Click the compress button. The compressed image now appears in the given section.</li>
+                <li>	Click the download button provided. Now the compressed image is successfully downloaded.</li>
+                Note: compresstheimage.com compress JPEG, JPG, PNG, GIF, ICO and WEBP
+
             </ul>
-        </div>
+        </div >
     )
 }
 
