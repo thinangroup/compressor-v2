@@ -18,7 +18,6 @@ function Navbar() {
             </div>
             <div className='hideMe'><MenuListComposition/></div>
         </div>
-
     )
 }
 
