@@ -1,12 +1,15 @@
 import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
+import Navbar from '../components/navbar';
+import Social from '../components/social';
 
 export default function PrivacyPolicy() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="md" style={{ background: 'white' }}>
+      <Navbar/>
+      <Container maxWidth="md" style={{ background: 'white', marginTop:'10px' }}>
         <h2>Privacy Policy for Compress The Image</h2>
         <p>At Compress The Image, accessible from <a href='https://compresstheimage.com/'>https://compresstheimage.com/</a>, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Compress The Image and how we use it.</p>
         <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to Contact through email at <b>thinangroups@gmail.com</b></p>
@@ -30,11 +33,8 @@ export default function PrivacyPolicy() {
         <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Compress The Image. This policy is not applicable to any information collected offline or via channels other than this website.</p>
         <h2>Consent</h2>
         <p>By using our website, you hereby consent to our Privacy Policy and agree to its Terms and Conditions.</p>
-
-        <h3 >
-          Click here for <a href='/'>Compresstheimage's homepage</a>
-        </h3>
       </Container>
+      <Social/>
     </React.Fragment>
   );
 }

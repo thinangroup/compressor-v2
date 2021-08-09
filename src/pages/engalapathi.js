@@ -1,15 +1,17 @@
 import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
-import Social from './social';
+import Social from '../components/social';
+import Navbar from '../components/navbar';
 
 export default function EngalaPathi() {
     return (
         <React.Fragment>
             <CssBaseline />
-            <Container maxWidth="md" style={{ background: 'white' }}>
+            <Navbar />
+            <Container maxWidth="md" style={{ marginTop: '30px', position: 'relative' }}>
                 <div className='rules-main'>
-                    <h1 style={{ marginBottom: '0px' }}>About Us:</h1>
+                    <h1 style={{ marginBottom: '10px' }}>About Us:</h1>
                     <p style={{ textIndent: '50px' }}>
                         Compress The Image is the product of Thinan groups.
                         Thinan Groups was started by group of young entrepreneurs because we need to solve the
@@ -24,11 +26,8 @@ export default function EngalaPathi() {
                         users/customers suggestion.
                     </p>
                 </div>
-                <h3 >
-                    Click here for <a href='/'>Compresstheimage's homepage</a>
-                </h3>
-                <Social />
             </Container>
+            <Social position='absolute' />
         </React.Fragment>
     );
 }

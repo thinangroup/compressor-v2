@@ -8,6 +8,8 @@ import CardMedia from '@material-ui/core/CardMedia';
 const useStyles = makeStyles({
   root: {
     maxWidth: 500,
+    borderRadius:'20px',
+    
   },
   media: {
     height: 250,
@@ -15,6 +17,7 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     display: 'flex',
     alignItems: 'center',
+    background:"#ECECEC",
   },
 });
 

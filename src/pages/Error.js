@@ -1,7 +1,7 @@
 import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
-import Social from './social';
+import Social from '../components/social';
 
 export default function Error() {
     return (

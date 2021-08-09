@@ -1,10 +1,19 @@
-import React from 'react'
+import React from 'react';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Container from '@material-ui/core/Container';
+import Social from '../components/social';
+import Navbar from '../components/navbar';
+import '../styles/kadhai.css';
 
-function Kadhai() {
+export default function Kadhai() {
     return (
-        <div className='rules-main'>
-            <h2 style={{ marginBottom: '0px' }}>Why do we Compress images?</h2>
-            <p className='rules-point' style={{ textIndent: '50px', paddingLeft: '10px', paddingRight:'10px' }}>
+        <React.Fragment>
+            <CssBaseline />
+            <Navbar />
+            <Container maxWidth="md" className='kadhaiMainContainer'>
+            <div className='rules-main'>
+            <h2 className='kadhaiHeading'>Why do we Compress images?</h2>
+            <p className='rules-point kadhai'>
                 <li> We compress the image for various reasons. One the most important reason for
                     compressing the image is to <b>reduce the space</b>. Compressing images are know in various
                     forms like reducing image  size, optimizing the image. Most of the websites around the world
@@ -44,8 +53,9 @@ function Kadhai() {
                 </li>
             </p>
         </div>
-    )
-
+            </Container>
+            <Social position='sticky' />
+        </React.Fragment>
+    );
 }
 
-export default Kadhai

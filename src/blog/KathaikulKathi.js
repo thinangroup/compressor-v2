@@ -1,11 +1,19 @@
-import React from 'react'
+import React from 'react';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Container from '@material-ui/core/Container';
+import Social from '../components/social';
+import Navbar from '../components/navbar';
+import '../styles/kadhai.css';
 
-function KadhaiKulKathai() {
+export default function KadhaiKulKathai() {
     return (
-        <div className='rules-main'>
-            <h2 style={{ marginBottom: '0px' }}>Different types of image formats:</h2>
-            <p className='rules-point' style={{ textIndent: '50px', paddingLeft: '10px', paddingRight: '10px' }}>
-
+        <React.Fragment>
+            <CssBaseline />
+            <Navbar />
+            <Container maxWidth="md" className="kadhaiMainContainer" >
+            <div className='rules-main'>
+            <h2 className="kadhaiHeading">Different types of image formats:</h2>
+            <p className='rules-point kadhai'>
 
                 <li> <b>GIF:  </b><br></br>
                 <p style={{margin:'0px', textIndent: '100px'}}>Graphics Interchange Format(GIF)  is a bitmap image format  that supports
@@ -37,8 +45,8 @@ function KadhaiKulKathai() {
 
             </p>
         </div>
-    )
-
+            </Container>
+            <Social position='sticky' />
+        </React.Fragment>
+    );
 }
-
-export default KadhaiKulKathai;
