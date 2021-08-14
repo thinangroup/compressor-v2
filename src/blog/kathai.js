@@ -4,12 +4,14 @@ import Container from '@material-ui/core/Container';
 import Social from '../components/social';
 import Navbar from '../components/navbar';
 import '../styles/kadhai.css';
+import RectangleGoogleAds from '../GoogleAds/rectangle';
 
 export default function Kadhai() {
     return (
         <React.Fragment>
             <CssBaseline />
             <Navbar />
+            <RectangleGoogleAds slot='4755549069'/>
             <Container maxWidth="md" className='kadhaiMainContainer'>
             <div className='rules-main'>
             <h2 className='kadhaiHeading'>Why do we Compress images?</h2>
@@ -29,6 +31,7 @@ export default function Kadhai() {
                     This is just an example for a small amount of space. Think about a <b>multinational companies</b> or
                     <b> E-Commerce websites</b>, they have million and billions of images which require many servers and
                     it costs them more. By reducing the size they save millions of dollars.</li>
+                    <RectangleGoogleAds slot='4755549069'/>
                 <li>You may also note that many companies when asking for job applications they limit the
                     size of the image to be uploaded. They limit the size like <b>compress to 200kb / resize
                     to 200kb , compress to 100kb / resize to 100kb</b>. They mention the size just because to
@@ -54,6 +57,7 @@ export default function Kadhai() {
             </p>
         </div>
             </Container>
+            <RectangleGoogleAds slot='4755549069'/>
             <Social position='sticky' />
         </React.Fragment>
     );

@@ -2,6 +2,7 @@ import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
 import Social from '../components/social';
+import RectangleGoogleAds from '../GoogleAds/rectangle';
 
 export default function Error() {
     return (
@@ -16,6 +17,7 @@ export default function Error() {
                 </div>
                 <Social/>
             </Container>
+            <RectangleGoogleAds slot='4755549069'/>
         </React.Fragment>
     );
 }

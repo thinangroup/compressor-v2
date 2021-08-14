@@ -6,6 +6,7 @@ import Navbar from './components/navbar';
 import MainContent from './maincontent';
 import Social from './components/social';
 import Rules from './rules';
+import RectangleGoogleAds from './GoogleAds/rectangle';
 
 export default function SimpleContainer() {
   return (
@@ -17,7 +18,8 @@ export default function SimpleContainer() {
         <FullWidthGrid />
       </Container>
       <Rules />
-      <Social position='sticky'/>
+      <RectangleGoogleAds slot='7900942379'/>
+      <Social position='relative'/>
     </React.Fragment>
   );
 }

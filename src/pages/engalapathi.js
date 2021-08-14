@@ -3,6 +3,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
 import Social from '../components/social';
 import Navbar from '../components/navbar';
+import RectangleGoogleAds from '../GoogleAds/rectangle';
 
 export default function EngalaPathi() {
     return (
@@ -27,6 +28,7 @@ export default function EngalaPathi() {
                     </p>
                 </div>
             </Container>
+            <RectangleGoogleAds slot='4755549069'/>
             <Social position='absolute' />
         </React.Fragment>
     );

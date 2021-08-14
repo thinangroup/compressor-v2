@@ -4,12 +4,14 @@ import Container from '@material-ui/core/Container';
 import Social from '../components/social';
 import Navbar from '../components/navbar';
 import Cards from '../components/cards';
+import RectangleGoogleAds from '../GoogleAds/rectangle';
 
 export default function Blogs() {
     return (
         <React.Fragment>
             <CssBaseline />
             <Navbar />
+            <RectangleGoogleAds slot='4755549069'/>
             <Container maxWidth="md" style={{ marginTop: '40px', position: 'relative' }}>
                 <div className='blogsView'>
                     <Cards image="https://cdn.kastatic.org/ka-perseus-images/cdaa3bfc074058fe11e9fd6dad9ae3f419359372.svg" heading='Why Do We Compress Images ?' kathai='We compress the image for various reasons. One the most important reason for
@@ -20,6 +22,7 @@ export default function Blogs() {
                 </div>
 
             </Container>
+            <RectangleGoogleAds slot='4755549069'/>
             <Social position='sticky' />
         </React.Fragment>
     );

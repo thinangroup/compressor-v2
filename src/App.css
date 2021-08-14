@@ -65,22 +65,23 @@ input[type="file"] {
 }
 
 .main-content {
-  text-align: left;
+  text-align: start;
   padding-left: 10px;
   margin-left: 2%;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
   margin-top: 2%;
   color: #353839;
 }
 
 .main-content-para {
   margin: 10px;
+  width: 100%;
   margin-left: 5px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  align-items: justify;
+  align-items: Left;
   color: #353839;
   /* padding: 5px; */
 }
@@ -97,8 +98,9 @@ input[type="file"] {
 }
 
 .mainContentStyle {
-  float: left;
-  margin: 20px 0px;
+  margin-top: 20px;
+  justify-content: space-between;
+
 }
 
 .cutWord {}

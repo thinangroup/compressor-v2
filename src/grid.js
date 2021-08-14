@@ -11,6 +11,7 @@ import imageCompression from "browser-image-compression";
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
 import Spinner from './components/spinner';
+import RectangleGoogleAds from './GoogleAds/rectangle';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -63,7 +64,7 @@ export default function FullWidthGrid() {
         setOrigImage(imagefile);
         setorigImageFile(URL.createObjectURL(imagefile));
         setfilename(imagefile.name);
-        document.getElementById('compress button').scrollIntoView({ behavior: "smooth" });
+        document.getElementById('Upload Button').scrollIntoView({ behavior: "smooth" });
     };
 
     const handleCompressImage = (e) => {
@@ -83,7 +84,7 @@ export default function FullWidthGrid() {
             const downloadLink = URL.createObjectURL(output);
             setcompressImage(downloadLink);
             setSpinner('');
-            document.getElementById('Download image').scrollIntoView({ behavior: "smooth" });
+            document.getElementById('compress button').scrollIntoView({ behavior: "smooth" });
         })
     }
     function spinnerStart() {
@@ -100,8 +101,9 @@ export default function FullWidthGrid() {
     return (
         <div className={classes.root}>
             <Container maxWidth="md">
+            <Grid style={{ margin: '5px 0px'}}><RectangleGoogleAds slot='1452466980'/></Grid>
                 <Grid container spacing={3}>
-                    <Grid item xs={12} sm={4}>
+                    <Grid item xs={12} sm={4} id="Upload Button">
                         <Paper className={classes.paper}>
                             <div className="compress">
                                 <label className="custom-file-upload " >
@@ -157,6 +159,7 @@ export default function FullWidthGrid() {
                     </Grid>
 
                 </Grid>
+                <Grid style={{ marginTop: '5px'}}><RectangleGoogleAds slot='4755549069'/></Grid>
             </Container>
 
 
