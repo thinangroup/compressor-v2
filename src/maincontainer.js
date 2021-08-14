@@ -18,7 +18,9 @@ export default function SimpleContainer() {
         <FullWidthGrid />
       </Container>
       <Rules />
+      <Container maxWidth="md">
       <RectangleGoogleAds slot='7900942379'/>
+      </Container>
       <Social position='relative'/>
     </React.Fragment>
   );

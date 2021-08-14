@@ -17,7 +17,7 @@ export default function Error() {
                 </div>
                 <Social/>
             </Container>
-            <RectangleGoogleAds slot='4755549069'/>
+            <Container maxWidth="md"><RectangleGoogleAds slot='4755549069'/></Container>
         </React.Fragment>
     );
 }

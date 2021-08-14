@@ -27,9 +27,10 @@ export default function EngalaPathi() {
                         users/customers suggestion.
                     </p>
                 </div>
+                <RectangleGoogleAds slot='4755549069'/>
             </Container>
-            <RectangleGoogleAds slot='4755549069'/>
-            <Social position='absolute' />
+            
+            <Social position='sticky' />
         </React.Fragment>
     );
 }

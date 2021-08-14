@@ -11,8 +11,9 @@ export default function Blogs() {
         <React.Fragment>
             <CssBaseline />
             <Navbar />
-            <RectangleGoogleAds slot='4755549069'/>
+
             <Container maxWidth="md" style={{ marginTop: '40px', position: 'relative' }}>
+                <RectangleGoogleAds slot='4755549069' />
                 <div className='blogsView'>
                     <Cards image="https://cdn.kastatic.org/ka-perseus-images/cdaa3bfc074058fe11e9fd6dad9ae3f419359372.svg" heading='Why Do We Compress Images ?' kathai='We compress the image for various reasons. One the most important reason for
                         compressing the image is to reduce the space. Compressing images forms like  . . . ' link='/why-do-we-compress-images' />
@@ -20,9 +21,9 @@ export default function Blogs() {
                     8 bits per pixel, that is an image can have 256 distinct colors. One of the major . . . ' link='/different-types-of-image-formats' />
 
                 </div>
-
+                <RectangleGoogleAds slot='4755549069' />
             </Container>
-            <RectangleGoogleAds slot='4755549069'/>
+
             <Social position='sticky' />
         </React.Fragment>
     );
