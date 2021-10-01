@@ -59,10 +59,8 @@
     window.onload = function() {
       setTimeout(function() {
         if ( typeof(window.google_jobrunner) === "undefined" ) {
-          console.log("ad blocker installed");
-        } else {
-          console.log("no ad blocking found.");
-        }
+          alert("ad blocker installed");
+        } 
       }, 10000);
     };
   </script>
