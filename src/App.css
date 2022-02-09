@@ -19,6 +19,13 @@ input[type="file"] {
   display: none;
 }
 
+.align-button{
+  margin-top: 10px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
 .custom-file-upload {
   display: inline-block;
   padding: 8px 15px;

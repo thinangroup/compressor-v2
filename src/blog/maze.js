@@ -7,7 +7,7 @@ import Content1 from '../components/contents/content1';
 import RectangleGoogleAds from '../GoogleAds/rectangle';
 
 
-export default function Kadhai() {
+export default function Maze() {
     return (
         <React.Fragment>
             <CssBaseline />

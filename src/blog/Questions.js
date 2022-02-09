@@ -6,7 +6,7 @@ import '../styles/kadhai.css';
 import Content2 from '../components/contents/content2';
 import RectangleGoogleAds from '../GoogleAds/rectangle';
 
-export default function KadhaiKulKathai() {
+export default function Questions() {
     return (
         <React.Fragment>
             <CssBaseline />
