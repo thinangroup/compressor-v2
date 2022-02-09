@@ -1,22 +1,26 @@
-import MainPage from './mainpage';
+import SimpleContainer from './maincontainer';
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Error from './pages/Error';
-import Jigsaw1 from './pages/jigsaw1';
-import Jigsaw2 from './pages/jigsaw2';
-import Maze from './blog/maze';
-import Questions from './blog/Questions';
+import EngalaPathi from './pages/engalapathi';
+import PrivacyPolicy from './pages/privacyPolicy';
+import Terms from './pages/termsandConditions';
+import Blogs from './pages/blogs';
+import Kadhai from './blog/kathai';
+import KadhaiKulKathai from './blog/KathaikulKathi';
 import './App.css';
 
 function App() {
   return (
     <main style={{ background: '#FFFFF0', color: '#353839'}}>
       <Switch>
-        <Route path="/" component={MainPage} exact />
-        <Route path="/jigsaw1" component={Jigsaw1} />
-        <Route path="/jigsaw2" component={Jigsaw2} />
-        <Route path="/maze" component={Maze} />
-        <Route path="/different-types-of-image-formats" component={Questions} />
+        <Route path="/" component={SimpleContainer} exact />
+        <Route path="/about" component={EngalaPathi} />
+        <Route path="/blogs" component={Blogs} />
+        <Route path="/why-do-we-compress-images" component={Kadhai} />
+        <Route path="/different-types-of-image-formats" component={KadhaiKulKathai} />
+        <Route path="/privacy-policy" component={PrivacyPolicy} />
+        <Route path="/terms-and-conditions" component={Terms} />
         <Route component={Error} />
       </Switch>
     </main>
